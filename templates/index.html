@@ -9,13 +9,14 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"/>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 {% endblock %}
 
 {% block title %}My Top 10 Movies{% endblock %}
 
 {% block content %}
 <div class="container">
-    <h1 class="heading">My Top Movies</h1>
+    <i class="fa fa-camera-movie"></i><h1 class="heading">My Top Movies</h1>
     <p class="description">These are my all time favourite movies.</p>
     <div class="movies-list">
         {% for movie in all_movies|reverse %}
